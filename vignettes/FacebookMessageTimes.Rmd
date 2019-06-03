@@ -14,25 +14,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r, warning = FALSE}
 library(FacebookMessageTimes)
 ```
 
 
-```{r}
+```{r, warning = FALSE}
 data <- load_facebook_message_data("../data-raw/messages_censored1.json")
 
-tobin_times <- get_person_message_times(data, "Tobin South")
+tobin_times <- FacebookMessageTimes::get_person_message_times(data, "Tobin South")
 
 date_times <- get_datetime(tobin_times)
 
 ```
 
 
-```{r}
-plot.over_time(date_times)
+```{r, warning = FALSE}
+plot_over_time(date_times)
 ```
 
-```{r}
-plot.time_of_day(date_times)
+```{r, warning = FALSE}
+plot_time_of_day(date_times)
 ```
