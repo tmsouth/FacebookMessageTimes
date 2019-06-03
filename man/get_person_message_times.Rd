@@ -19,5 +19,4 @@ Finds all of the message times for a given person in a series of messages.
 }
 \examples{
 : get_person_message_times(msgs, "Tobin South")
-
 }

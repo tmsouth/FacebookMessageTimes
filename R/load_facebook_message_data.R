@@ -10,6 +10,7 @@
 #'
 #' @return A list of all messages.
 #'
+#' @export
 load_facebook_message_data <- function(file_path){
 
   all_data <- fromJSON(file = file_path)

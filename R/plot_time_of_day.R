@@ -5,7 +5,8 @@
 #'
 #' @param raw_datetime: A list of datetime objects of messages.
 #'
-plot.time_of_day <- function(raw_datetime){
+#' @export
+plot_time_of_day <- function(raw_datetime){
 
   clockS = function(t){hour(t)*3600+minute(t)*60+second(t)}
 

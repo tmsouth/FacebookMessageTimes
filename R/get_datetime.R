@@ -6,7 +6,8 @@
 #' @param timezone: The timezone of the messages, default to Adelaide
 #'
 #' @return A list of datetime objects
-library(lubridate)
+#' @export
+#'
 get_datetime <- function(raw_unix_times, timezone = "Australia/Darwin"){
 
   raw_datetime <- lapply(raw_unix_times, as_datetime) %>%
