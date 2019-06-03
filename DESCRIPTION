@@ -10,11 +10,12 @@ Description: Analysis tool for downloaded facebook messenger data.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports:
+Depends:
     dplyr,
     rjson,
     dplyr,
-    lubridate
+    lubridate,
+    ggplot2
 Suggests: 
     knitr,
     rmarkdown,
