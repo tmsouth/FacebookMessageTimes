@@ -4,7 +4,7 @@ An R package for analysing downloaded Facebook Messenger data. Allows you to imp
 
 ## Getting Data
 
-Go to Facebook to (Download your Information)[https://www.facebook.com/settings?tab=your_facebook_information]
+Go to Facebook to [Download your Information](https://www.facebook.com/settings?tab=your_facebook_information)
 
 Choose 
 ```
