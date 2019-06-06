@@ -1,12 +1,15 @@
-#' A collection of my facebook messages with Josh and Miriam
+#' A collection of my facebook messages from three statistics students
 #'
-#'
-#' Summary statistics for world cup teams in 2010
-#' A dataset containing summary statistic for each team in World Cup 2010.
-#' @format A data frame with 32 rows and 15 variables: \describe{
-#'   \item{Country}{The world cup team}
-#'   \item{\% Goals to shots}{Percentage of shots on goal that resulted in a goal} ...
-#' }
-#' @source \url{jono}
+#' @format A JSON file containing the meta data of a Facebook Messenger conversation.
+#' @source \url{https://www.facebook.com/settings?tab=your_facebook_information}
 
 "messages_censored1.json"
+
+## library ----
+library(tidyverse)
+
+## read in data ----
+messages_censored  <- read_csv("data-raw/messages_censored1.json")
+
+## Save data to package ----
+usethis::use_data(messages_censored, overwrite = TRUE)
