@@ -21,5 +21,5 @@ The download should be unzipped and each conversation is inside a folder of the 
 Using `devtools` in R.
 
 ```
-devtools::install_github("tmsouth/FacebookMessageTimes")
+devtools::install_github("tobinsouth/FacebookMessageTimes")
 ```
